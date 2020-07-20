@@ -1,8 +1,0 @@
-
-
-java:S1488+"iImmediately return this expression instead of assigning it to the temporary variable "quantidadeProduto".(£„…Ï
-Y
-java:S1128"<Remove this unused import 'org.apache.commons.io.FileUtils'.(À¿Ù´8ãÖÏö«.
-F
-java:S1128")Remove this unused import 'java.io.File'.(†Ð¥Å8ãÖÏö«.
-o	java:S116"URename this field "QtsProduto" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÛªÝüÿÿÿÿ

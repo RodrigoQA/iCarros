@@ -1,19 +1,0 @@
-
-J
-java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ
-k	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñõÖ‚øÿÿÿÿ
-X
-java:S1128"=Remove this unused import 'java.util.NoSuchElementException'.(®“ÿéúÿÿÿÿ
-J
-java:S37406"/Provide the parametrized type for this generic.(ØøáÉþÿÿÿÿ
-o	java:S116"URename this field "cart_click" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ËÔ—úÿÿÿÿ
-~
-java:S1488S"cImmediately return this expression instead of assigning it to the temporary variable "QtsCarrinho".(ñõÖ‚øÿÿÿÿ
-f	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³„òö
-p	java:S116"VRename this field "ADD_TO_CART" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÆñ×ûÿÿÿÿ
-”
-java:S1130["wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(îƒ¿ç8üÕ¹¨¬.
-\
-java:S1128"FRemove this unused import 'org.openqa.selenium.support.ui.FluentWait'.(Æ÷·Ü
-{
-java:S1488*"fImmediately return this expression instead of assigning it to the temporary variable "valorDoProduto".(‰òþ_

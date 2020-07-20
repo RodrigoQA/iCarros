@@ -3,6 +3,7 @@ package base;
 
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
@@ -31,8 +32,8 @@ private static WebDriver driver;
         homePage = new HomePage(driver);
     }
 
-    @After
-    public void finalizar(){
+    @AfterClass
+    public static void finalizar(){
         driver.quit();
     }
 }

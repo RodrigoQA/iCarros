@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="iterasys" />
         <module name="ProjetoItauWeb" />
+        <module name="iterasys" />
         <module name="modolo_web" />
       </profile>
     </annotationProcessing>

@@ -11,9 +11,8 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class HomePageTest extends BaseTests {
+public class StepDefinitionTest extends BaseTests {
     protected ResultPage resultPage;
-    protected LoginPage loginPage;
     private WebDriver driver;
 
     @Test

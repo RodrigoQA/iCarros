@@ -2,37 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97606f10-4ab2-4ae6-bc2c-ff1ae166c45f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modolo_web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bdc7fe650a4170fd3332cdfc4dca51f7507f98b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2223981d875fe03585778825dc9178a458cfb84" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9655b2a35fae75d92697b79cda62632f93f33e6e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9655b2a35fae75d92697b79cda62632f93f33e6e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3c5c35dd7db687159ad58cc5ceb949c89605d3c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3c5c35dd7db687159ad58cc5ceb949c89605d3c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdadbcd406224ae7186145b817b3122617f129fe" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdadbcd406224ae7186145b817b3122617f129fe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed7ae5a43811cf21d47a6464d9d6be7070fa3f71" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efbdff32032ee453b290898a2edb3d7bcb7c43eb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efbdff32032ee453b290898a2edb3d7bcb7c43eb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2223981d875fe03585778825dc9178a458cfb84" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3c5c35dd7db687159ad58cc5ceb949c89605d3c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdadbcd406224ae7186145b817b3122617f129fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da4e4330697e656bb9236aab691ee0beb1382c23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efbdff32032ee453b290898a2edb3d7bcb7c43eb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CarrinhoPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ModalProdutoPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProdutoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/homepage/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/CarrinhoPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/StepDefinitionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/ModalProdutoPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/ProdutoPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/LoginPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/homepage/HomePageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/HomePageTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +65,8 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HomePageTest.testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta">
-    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StepDefinitionTest">
+    <configuration name="StepDefinitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjetoItauWeb" />
       <extension name="coverage">
         <pattern>
@@ -86,14 +75,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomePageTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.StepDefinitionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StepDefinitionTest.testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjetoItauWeb" />
       <extension name="coverage">
         <pattern>
@@ -102,7 +91,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomePageTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.StepDefinitionTest" />
       <option name="METHOD_NAME" value="testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -110,7 +99,7 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StepDefinitionTest.testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjetoItauWeb" />
       <extension name="coverage">
         <pattern>
@@ -119,7 +108,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomePageTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.StepDefinitionTest" />
       <option name="METHOD_NAME" value="testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -173,15 +162,15 @@
     <list>
       <item itemvalue="JUnit.steps in modolo_web" />
       <item itemvalue="JUnit.features in modolo_web" />
-      <item itemvalue="JUnit.HomePageTest" />
-      <item itemvalue="JUnit.HomePageTest.testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros" />
-      <item itemvalue="JUnit.HomePageTest.testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta" />
+      <item itemvalue="JUnit.StepDefinitionTest" />
+      <item itemvalue="JUnit.StepDefinitionTest.testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros" />
+      <item itemvalue="JUnit.StepDefinitionTest.testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HomePageTest.testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta" />
-        <item itemvalue="JUnit.HomePageTest.testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros" />
-        <item itemvalue="JUnit.HomePageTest" />
+        <item itemvalue="JUnit.StepDefinitionTest" />
+        <item itemvalue="JUnit.StepDefinitionTest.testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta" />
+        <item itemvalue="JUnit.StepDefinitionTest.testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros" />
         <item itemvalue="JUnit.features in modolo_web" />
         <item itemvalue="JUnit.steps in modolo_web" />
       </list>
@@ -229,10 +218,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="308" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1595205029515" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595205071156">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595212426854">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1595205071156" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1595212426854" />
     <state x="438" y="98" width="732" height="559" key="#xdebugger.evaluate" timestamp="1595209343016">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -241,38 +230,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595208109008" />
-    <state width="1323" height="303" key="GridCell.Tab.0.bottom" timestamp="1595211083931">
+    <state width="1323" height="215" key="GridCell.Tab.0.bottom" timestamp="1595213263670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595211083931" />
-    <state width="1323" height="303" key="GridCell.Tab.0.center" timestamp="1595211083930">
+    <state width="1323" height="215" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595213263670" />
+    <state width="1323" height="215" key="GridCell.Tab.0.center" timestamp="1595213263670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595211083930" />
-    <state width="1323" height="303" key="GridCell.Tab.0.left" timestamp="1595211083928">
+    <state width="1323" height="215" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595213263670" />
+    <state width="1323" height="215" key="GridCell.Tab.0.left" timestamp="1595213263669">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595211083928" />
-    <state width="1323" height="303" key="GridCell.Tab.0.right" timestamp="1595211083930">
+    <state width="1323" height="215" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595213263669" />
+    <state width="1323" height="215" key="GridCell.Tab.0.right" timestamp="1595213263670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595211083930" />
-    <state width="1323" height="303" key="GridCell.Tab.1.bottom" timestamp="1595211083932">
+    <state width="1323" height="215" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595213263670" />
+    <state width="1323" height="377" key="GridCell.Tab.1.bottom" timestamp="1595212954199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595211083932" />
-    <state width="1323" height="303" key="GridCell.Tab.1.center" timestamp="1595211083932">
+    <state width="1323" height="377" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595212954199" />
+    <state width="1323" height="377" key="GridCell.Tab.1.center" timestamp="1595212954198">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1595211083932" />
-    <state width="1323" height="303" key="GridCell.Tab.1.left" timestamp="1595211083931">
+    <state width="1323" height="377" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1595212954198" />
+    <state width="1323" height="377" key="GridCell.Tab.1.left" timestamp="1595212954198">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1595211083931" />
-    <state width="1323" height="303" key="GridCell.Tab.1.right" timestamp="1595211083932">
+    <state width="1323" height="377" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1595212954198" />
+    <state width="1323" height="377" key="GridCell.Tab.1.right" timestamp="1595212954198">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1595211083932" />
+    <state width="1323" height="377" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1595212954198" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1595189035090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -298,10 +287,13 @@
           <line>92</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/HomePageTest.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="39" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/StepDefinitionTest.java</url>
+          <line>31</line>
+          <properties class="tests.StepDefinitionTest" method="testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

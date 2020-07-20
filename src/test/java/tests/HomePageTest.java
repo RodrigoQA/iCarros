@@ -1,16 +1,10 @@
-package homepage;
+package tests;
 
 import base.BaseTests;
-import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.*;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.Random;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -18,115 +12,31 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class HomePageTest extends BaseTests {
-    protected ProdutoPage produtoPage;
+    protected ResultPage resultPage;
     protected LoginPage loginPage;
-    protected ModalProdutoPage modalProdutoPage;
-    protected CarrinhoPage carrinhoPage;
-    String tamanhoProduto = "XL";
-    String corProduto = "Black";
-    int quantidadeProduto = 3;
     private WebDriver driver;
-    @Test
-    public void testContarProdutos_OitoProdutosDiferentes(){
-
-        assertThat(homePage.contarProdutos(), is(8));
-    }
-    @Test
-    public void testValidarCarrinhoVazio_ZeroItensNoCarrinho(){
-        int produtosNoCarrinho =  homePage.obterquantidadesDeProdutosNoCarrinho();
-        assertThat(produtosNoCarrinho, is(0));
-
-    }
-    @Test
-    public void testSalvarTxt() throws IOException {
-        int random = (int )(Math.random() * 501 + 1);
-        String produtosNoCarrinho =  homePage.obterquantidadesDeProdutosNoCarrinhoString();
-        String produto = homePage.obterNomeProduto(1);
-        String produto2 = homePage.obterNomeProduto(2);
-        String produto3 = homePage.obterNomeProduto(7);
-        File DestFile= new File("extractedFilePath"+random+" ");
-        FileUtils.writeStringToFile(DestFile, produto+ ", " +produto2+ ", " + produto3);
-    }
 
     @Test
-    public void testValidarDetalhesDoProduto_DescriscaoEValorIguais()  {
-        int indice = 0;
-        String nomeProduto_HomePage = homePage.obterNomeProduto(indice);
-        double valorProduto_HomePage = homePage.obterValorProduto(indice);
-        produtoPage = homePage.clicarNoProduto(indice);
-        String nomeProduto_ProdutoPage = produtoPage.obterNomeProduto();
-        double valorProduto_ProdutoPage = produtoPage.obterValorProduto();
-        assertTrue(valorProduto_ProdutoPage == valorProduto_HomePage);
-        assertEquals(nomeProduto_HomePage.toUpperCase(), nomeProduto_ProdutoPage.toUpperCase());
+    public void testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros() {
+        homePage.deselecionarCarro0km();
+        homePage.fecharAviso();
+        homePage.selecionarMarca("BMW");
+        homePage.selecionarModelo("X1");
+        homePage.selecionaAnoMax("2017");
+        homePage.selecionarAnoMin("2017");
+        homePage.selecionarValorMax("120 mil");
+        homePage.selecionarEstado("SÃO PAULO");
+        resultPage = homePage.buscar();
 
     }
     @Test
-
-    public void testLoginComSucesso_UsuarioLogado()  {
-        loginPage = homePage.click_SingIn();
-        loginPage.inserirEmail("rodrigolima.ads93@gmail.com");
-        loginPage.inserirSenha("psw123");
-        HomePage homePage =  loginPage.fazerLogin();
-        String usuarioLogado = homePage.getNameLogado();
-        assertThat(usuarioLogado,is("Rodrigo Lima"));
-        assertThat(homePage.estaLogado2("Rodrigo Lima"), is(true));
-        carregarPaginaInicial();
+    public void testValidarModeloEValorAVistaPrimeiroAndSegundoCarroDaListaProduzidaPelaConsulta() {
+        testDeveRealizarUmaConsultaQueRetorneUmaListaComPeloMenos3Carros();
+       resultPage.obterTamanhoDaList();
+       assertEquals("R$ 118.900,00\n" + "preço à vista",resultPage.obterValor(0)); //1° da lista
+       assertEquals("R$ 118.900,00\n" + "preço à vista",resultPage.obterValor(1)); //2° da lista
+       assertThat(resultPage.obterModelo(0),is("BMW X1 2.0 sDrive20i GP ActiveFlex")); //1° da lista
+       assertThat(resultPage.obterModelo(1),is("BMW X1 2.0 sDrive20i GP ActiveFlex")); //2° da lista
     }
-
-    @Test
-    public void testeIncluirProdutoNoCarrinho_ProdutoInclusoComSucesso() throws InterruptedException {
-        //Pré-condicao : usuario logado
-        if(!homePage.estaLogado2("Rodrigo Lima")){
-            testLoginComSucesso_UsuarioLogado();
-        }
-        //Teste : selecionando produto
-        testValidarDetalhesDoProduto_DescriscaoEValorIguais();
-
-        //selecionar tamanho
-        produtoPage.selecionarOpcaoDropDrown(tamanhoProduto);
-        List<String> listaOpcoes = produtoPage.obterOpcoesSelecionadas();
-
-        //selecionar cor
-        produtoPage.selecionarCorPreta();
-
-        //selecionar quantidade
-        produtoPage.informarQuantidade(quantidadeProduto);
-        //adicionar no carrinho
-        modalProdutoPage = produtoPage.click_addtocart();
-
-        //validaçoes
-        assertTrue(modalProdutoPage.validarMensagemProdutoAdicionado().endsWith("Product successfully added to your shopping cart"));
-        assertEquals(modalProdutoPage.obterQuantidadeProduto(), Integer.toString(quantidadeProduto));
-        assertEquals(modalProdutoPage.obterCorProduto(),corProduto);
-        assertEquals(modalProdutoPage.obterTamanhoProduto(),tamanhoProduto);
-        assertEquals(modalProdutoPage.obterDescricaoProduto().toUpperCase(),produtoPage.obterNomeProduto());
-
-    }
-    @Test
-    public void testAdicionarProdutoNoCarrinho_and_RemoverProdutoDoCarrinho() throws InterruptedException {
-        produtoPage = homePage.clicarNoProduto(0);
-        produtoPage.informarQuantidade(3);
-        modalProdutoPage = produtoPage.click_addtocart();
-        produtoPage = modalProdutoPage.continuarComprando();
-        homePage = produtoPage.paginaInicial();
-        carrinhoPage = homePage.visualizarCarrinho();
-        carrinhoPage.removerProdutoDoCarrinho(0);
-        assertEquals(produtoPage.obterQuantidadeDeProdutosNoCarrinho(),"(0)");
-
-    }
-@Test
-    public void testCalcularSomarDosProdutos_3Itens() throws InterruptedException {
-    produtoPage = homePage.clicarNoProduto(0);
-    produtoPage.informarQuantidade(3);
-    modalProdutoPage = produtoPage.click_addtocart();
-    produtoPage = modalProdutoPage.continuarComprando();
-    Thread.sleep(2000);
-    homePage = produtoPage.paginaInicial();
-    carrinhoPage = homePage.visualizarCarrinho();
-    double totalProdutos = Double.parseDouble(carrinhoPage.obterPrecoProduto()) * Integer.parseInt(carrinhoPage.obterQuantidadeProduto());
-    assertThat(totalProdutos,is(57.36));
-    System.out.println(carrinhoPage.obterPrecoProduto());
-    System.out.println(carrinhoPage.obterQuantidadeProduto());
-}
 
 }

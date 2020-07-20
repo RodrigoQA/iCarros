@@ -1,8 +1,3 @@
 
-v	java:S116"URename this field "cart_click" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ËÔ—úÿÿÿÿ8Å ªø©.
-€
-java:S1488D"cImmediately return this expression instead of assigning it to the temporary variable "nomeUsuario".( Óºœ8Å ªø©.
 L
-java:S3740"/Provide the parametrized type for this generic.(™åü8Å ªø©.
-‚
-java:S14886"fImmediately return this expression instead of assigning it to the temporary variable "valorDoProduto".(‰òş_8Å ªø©.
+java:S3740"/Provide the parametrized type for this generic.(™åü8‘œï¯.

@@ -1,0 +1,10 @@
+
+L
+java:S3740"/Provide the parametrized type for this generic.(Úòù§8ñ“ĞÎ¶.
+W
+java:S1128":Remove this unused import 'org.openqa.selenium.Dimension'.(ôûÑö8ÜÅëÎ¶.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(É¿ª8—Â´Ï¶.
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(µØ‘‘8†âğÎ¶.
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(ôçôºüÿÿÿÿ8¨†Ï¶.
+M
+java:S2201 "+The return value of "replace" must be used.(„¨İ«øÿÿÿÿ8¤äÁÏ¶.

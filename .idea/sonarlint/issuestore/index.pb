@@ -3,8 +3,6 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 Q
 !src/main/java/pages/HomePage.java,9\6\9655b2a35fae75d92697b79cda62632f93f33e6e
-X
-(src/test/java/homepage/HomePageTest.java,e\d\ed7ae5a43811cf21d47a6464d9d6be7070fa3f71
 Q
 !src/test/java/base/BaseTests.java,1\9\19f149529b2bd71032174e3d2f902a3b73e927fc
 Y
@@ -13,3 +11,19 @@ T
 $src/main/java/pages/ProdutoPage.java,b\d\bdadbcd406224ae7186145b817b3122617f129fe
 U
 %src/main/java/pages/CarrinhoPage.java,a\3\a3c5c35dd7db687159ad58cc5ceb949c89605d3c
+A
+extractedFilePath,a\2\a2223981d875fe03585778825dc9178a458cfb84
+R
+"src/main/java/pages/LoginPage.java,4\b\4bdc7fe650a4170fd3332cdfc4dca51f7507f98b
+_
+/src/test/java/steps/VisualizaProdutosSteps.java,d\a\da4e4330697e656bb9236aab691ee0beb1382c23
+P
+ src/test/java/runner/Runner.java,0\0\00619e8ed3c478baf77146b160d72321ab85b552
+U
+%src/main/java/core/DriverFactory.java,6\0\60327d119bab48a78e3ed2c668b2eeff9630a485
+Q
+!src/main/java/pages/BasePage.java,e\2\e2e13e66e55a179dc9c969979a2c5c7949318f67
+S
+#src/main/java/pages/ResultPage.java,6\4\649479d89b8d681bb1fc35c5d4ac7a42a2182f63
+U
+%src/test/java/tests/HomePageTest.java,7\8\783a8ca8a3f25e3d6da6995e310f05f3a1bef529

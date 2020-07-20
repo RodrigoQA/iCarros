@@ -1,11 +1,16 @@
 package homepage;
 
 import base.BaseTests;
+import org.apache.commons.io.FileUtils;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
+import java.util.Random;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -28,11 +33,21 @@ public class HomePageTest extends BaseTests {
     }
     @Test
     public void testValidarCarrinhoVazio_ZeroItensNoCarrinho(){
-
         int produtosNoCarrinho =  homePage.obterquantidadesDeProdutosNoCarrinho();
         assertThat(produtosNoCarrinho, is(0));
 
     }
+    @Test
+    public void testSalvarTxt() throws IOException {
+        int random = (int )(Math.random() * 501 + 1);
+        String produtosNoCarrinho =  homePage.obterquantidadesDeProdutosNoCarrinhoString();
+        String produto = homePage.obterNomeProduto(1);
+        String produto2 = homePage.obterNomeProduto(2);
+        String produto3 = homePage.obterNomeProduto(7);
+        File DestFile= new File("extractedFilePath"+random+" ");
+        FileUtils.writeStringToFile(DestFile, produto+ ", " +produto2+ ", " + produto3);
+    }
+
     @Test
     public void testValidarDetalhesDoProduto_DescriscaoEValorIguais()  {
         int indice = 0;
@@ -52,7 +67,7 @@ public class HomePageTest extends BaseTests {
         loginPage.inserirEmail("rodrigolima.ads93@gmail.com");
         loginPage.inserirSenha("psw123");
         HomePage homePage =  loginPage.fazerLogin();
-        String usuarioLogado = homePage.estaLogado();
+        String usuarioLogado = homePage.getNameLogado();
         assertThat(usuarioLogado,is("Rodrigo Lima"));
         assertThat(homePage.estaLogado2("Rodrigo Lima"), is(true));
         carregarPaginaInicial();
@@ -110,6 +125,8 @@ public class HomePageTest extends BaseTests {
     carrinhoPage = homePage.visualizarCarrinho();
     double totalProdutos = Double.parseDouble(carrinhoPage.obterPrecoProduto()) * Integer.parseInt(carrinhoPage.obterQuantidadeProduto());
     assertThat(totalProdutos,is(57.36));
+    System.out.println(carrinhoPage.obterPrecoProduto());
+    System.out.println(carrinhoPage.obterQuantidadeProduto());
 }
 
 }

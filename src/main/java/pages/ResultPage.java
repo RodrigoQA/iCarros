@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import java.util.NoSuchElementException;
 
 public class ProdutoPage {
     private WebDriver driver;
+
 
     private By descriscaoProduto = By.cssSelector(".h1");
     private By valorProduto = By.cssSelector(".current-price span:nth-child(1)"); //´Para quando temos 2 items na mesma class unica
@@ -87,8 +89,9 @@ public class ProdutoPage {
         return new CarrinhoPage(driver);
     }
     public HomePage paginaInicial() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(myStory));
         driver.findElement(myStory).click();
-        Thread.sleep(2000);
         return new HomePage(driver);
     }
 }

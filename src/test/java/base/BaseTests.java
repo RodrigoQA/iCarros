@@ -1,8 +1,8 @@
-package base;
+package core;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
@@ -21,11 +21,11 @@ private static WebDriver driver;
 
     }
     @Before
-    public void carregarPaginaInicial(){
+      public void carregarPaginaInicial(){
+        driver.get("https://www.icarros.com.br/principal/index.jsp");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
-        driver.get("https://marcelodebittencourt.com/demoprestashop/");
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        //  driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
         homePage = new HomePage(driver);
     }
 
